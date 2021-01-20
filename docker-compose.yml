@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.6
+    container_name: docker-mysql
+    environment:
+      MYSQL_DATABASE: buscador_pbu
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    restart: always
+    volumes:
+      - /Users/rm/Downloads/data_buscador:/var/lib/mysql
+  web:
+    image: php:7.3-apache
+    build: .
+    container_name: docker-php
+    ports:
+      - "80:80"
+    volumes:
+      - /Users/rm/Projects/buscador_pbu:/var/www/html
+    links:
+      - mysql
