@@ -12,9 +12,14 @@
     <script src="assets/js/main.js"></script>
 </head>
 <body class="container">
+<h1>Prestación Básica Universal (PBU)</h1>
+<hr></hr>
+<H3>Clientes alcanzados</H3>
+<br>
+<hr>
     <form class="mt-2">
         <div class="form-group">
-            <input class="form-control" type="text" id="buscador"/>
+            <input class="form-control" type="text" id="buscador" />
         </div>
     </form>
 
@@ -31,6 +36,16 @@
         </tbody>
     </table>
     <button class="btn btn-primary" id="vermas">Ver Mas</button>
+    
+    <div class="logo">
+    
+        <p>by Soluciones Digitales®</p>
+        
+        <img src="assets/css/img/logos_teco.png" >
+
+
+    
+    </div>
 </body>
 
 <script>
