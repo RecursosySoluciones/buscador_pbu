@@ -10,6 +10,7 @@ body {
 #vermas {
     display: block;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .container {
