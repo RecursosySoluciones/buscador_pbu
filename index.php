@@ -106,7 +106,7 @@
 
         $('#buscador').on('input',function(e){
             const { value } = e.target;
-            let limit = 10;
+            let limit = 15;
             let offset = 0;
             let url = `WS/search.php?limit=${limit}&offset=${offset}`;
 

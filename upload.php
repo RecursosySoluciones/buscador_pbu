@@ -30,7 +30,7 @@ if(isset($_GET['err'])) {
     <script src="assets/js/main.js"></script>
 </head>
 <body class="container">
-    <form class="mt-2" method="POST" action="WS/upload.php" enctype="multipart/form-data">
+    <form class="mt-2" method="POST" action="./WS/upload.php" enctype="multipart/form-data">
         <div class="form-group">
             <input required type="file" name="file"/>
         </div>

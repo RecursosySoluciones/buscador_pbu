@@ -3,9 +3,9 @@
 date_default_timezone_set("America/Argentina/Buenos_Aires");
 if($_SERVER["SERVER_NAME"]!="localhost"){
     define("ORIGENDB","mysql");// valores gladius o mysql
-    define("HOST", "localhost"); //define("HOST","localhost"); 
-    define("USERNAME", "root"); //define("USERNAME","root");
-    define("PASSWORD", "root"); //define("PASSWORD","");
+    define("HOST", "127.0.0.1"); //define("HOST","localhost"); 
+    define("USERNAME", "buscador_pbu"); //define("USERNAME","root");
+    define("PASSWORD", "SolucionesDigitales123!"); //define("PASSWORD","");
     define("BASEDEDATOS","buscador_pbu");	
 }
 if($_SERVER["SERVER_NAME"]=="localhost"){
@@ -17,8 +17,8 @@ define("BASEDEDATOS",'buscador_pbu');
 }
 
 function ConectarDb(){
-    $G = mysqli_connect(HOST, USERNAME, PASSWORD) or die ('Error de coneccion mySql');
-    mysqli_select_db($G , BASEDEDATOS) or die ('Error al seleccionar base de datos');		
+	 $G = mysqli_connect(HOST, USERNAME, PASSWORD) or die ('Error de coneccion mySql');
+   	 mysqli_select_db($G , BASEDEDATOS) or die ('Error al seleccionar base de datos');		
     return $G;
 }
 
