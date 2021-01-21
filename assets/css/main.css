@@ -37,3 +37,16 @@ body {
 .mt-2, .my-2 {
     width: 100%;
 }
+
+.table-danger, .table-danger>td, .table-danger>th {
+    background-color: #f5c6cb38 !important;
+}
+
+.table-success, .table-success>td, .table-success>th {
+    background-color: #c3e6cb45 !important;
+}
+
+.table {
+    border-color: 1 px solid #ebebeb !important;
+}
+
