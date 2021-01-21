@@ -75,11 +75,11 @@ try {
     }
 
     $return_data["Data"]["total_registers"] = $total_registers;
-    header("Location: /buscador/upload.php?err=false");
+    header("Location: /upload?err=false");
 
 } catch (Exception $e) {
     $return_data["Message"] = $e->getMessage();
     // echo json_encode($return_data);
-    header("Location: /buscador/upload.php?err=" . $return_data["Message"]);
+    header("Location: /upload?err=" . $return_data["Message"]);
 
 }
