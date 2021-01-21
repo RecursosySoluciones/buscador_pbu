@@ -23,7 +23,7 @@
         </div>
     </form>
 
-    <table class="table table-bordered" id="resultados">
+    <table class="table" id="resultados">
         <thead>
             <tr>
                 <th>DNI</th>

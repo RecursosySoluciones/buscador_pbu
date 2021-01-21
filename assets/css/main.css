@@ -39,11 +39,11 @@ body {
 }
 
 .table-danger, .table-danger>td, .table-danger>th {
-    background-color: #f5c6cb38 !important;
+    background-color: #f5c6cb1c !important;
 }
 
 .table-success, .table-success>td, .table-success>th {
-    background-color: #c3e6cb45 !important;
+    background-color: #c3e6cb12 !important;
 }
 
 .table {
