@@ -27,9 +27,8 @@ try {
     if(!isset($_FILES["file"])) {
         throw new Exception("Debe enviar un archivo");
     }
-    
     $file = $_FILES["file"];
-    
+
     if($file["type"] != "text/csv") { 
         throw new Exception("El archivo solo puede ser CSV");
     }
@@ -41,7 +40,6 @@ try {
     $file_name = getdate()[0] . ".csv";
     $file_name = "../files_uploaded/" . $file_name;
     $f = move_uploaded_file($_FILES["file"]["tmp_name"], $file_name);
-
     if(!$f) { throw new Exception("Error al subir el archivo"); }
 
     if(!crear_tabla_users()) { throw new Exception("Error al crear la base de datos"); }
@@ -81,8 +79,7 @@ try {
 
 } catch (Exception $e) {
     $return_data["Message"] = $e->getMessage();
-    var_dump($return_data);
     // echo json_encode($return_data);
-    // header("Location: /upload?err=" . $return_data["Message"]);
+    header("Location: /upload?err=" . $return_data["Message"]);
 
 }

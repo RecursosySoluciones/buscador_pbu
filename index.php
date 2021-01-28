@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,18 @@
     <script src="assets/js/main.js"></script>
 </head>
 <body class="container">
+<h1>Prestación Básica Universal (PBU)</h1>
+<hr></hr>
+<H3>Clientes alcanzados</H3>
+<br>
+<hr>
     <form class="mt-2">
         <div class="form-group">
-            <input class="form-control" type="text" id="buscador"/>
+            <input class="form-control" type="text" id="buscador" />
         </div>
     </form>
 
-    <table class="table table-bordered" id="resultados">
+    <table class="table" id="resultados">
         <thead>
             <tr>
                 <th>DNI</th>
@@ -31,6 +36,16 @@
         </tbody>
     </table>
     <button class="btn btn-primary" id="vermas">Ver Mas</button>
+    
+    <div class="logo">
+    
+        <p>by Soluciones Digitales®</p>
+        
+        <img src="assets/css/img/logos_teco.png" >
+
+
+    
+    </div>
 </body>
 
 <script>
@@ -91,7 +106,7 @@
 
         $('#buscador').on('input',function(e){
             const { value } = e.target;
-            let limit = 10;
+            let limit = 15;
             let offset = 0;
             let url = `WS/search.php?limit=${limit}&offset=${offset}`;
 
